@@ -5,7 +5,7 @@ function downloadimage() {
         document.body.appendChild(link);
         link.download = "mamerto" + mamerto_name.value ;
         link.href = canvas.toDataURL();
-        link.target = '_blank';
+        //link.target = '_blank';
         link.click();
     });
 }
