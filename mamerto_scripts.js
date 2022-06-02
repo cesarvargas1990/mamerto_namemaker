@@ -36,7 +36,7 @@ function selectText() {
 
 function generateColors(newtext) {
     newtext = newtext.slice(0,11);
-    newtext = newtext.replace(/\s/g, '');
+    //newtext = newtext.replace(/\s/g, '');
     let text = "";
     colors = [
         '#F59B20',
