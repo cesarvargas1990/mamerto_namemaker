@@ -36,6 +36,7 @@ function selectText() {
 
 function generateColors(newtext) {
     newtext = newtext.slice(0,30);
+    newtext.replace(/(?:\r\n|\r|\n)/g, '<br>');
     //newtext = newtext.replace(/\s/g, '');
     let text = "";
     colors = [
@@ -48,12 +49,24 @@ function generateColors(newtext) {
     ];
     var cont = -1;
     cantidadLetras = newtext.length;
+    var flag = 0;
     for (var x = 0; x < cantidadLetras; x++) {
         cont++;
         if (cont > 4 ) {
             cont = 0;
         }
-        text += "<font color=" + colors[cont] + ">" + newtext[x] + "</font>";
+        if (newtext[x].charCodeAt(0) == 10) {
+            console.log("aq")
+            newtext[x] = "</br>";
+            flag = 1;
+        }
+        if (flag == 1) {
+            text += "</br>";
+        } else {
+            text += "<font color=" + colors[cont] + ">" + newtext[x] + "</font>";
+        }
+        flag = 0;
+        
     }
     text += "<font color=" + colors[4] + ">@</font>";
     return text;

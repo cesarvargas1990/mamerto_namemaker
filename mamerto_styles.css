@@ -1,9 +1,7 @@
 #htmltoimage {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
-
-
 
 svg {
   left: 113px;
@@ -19,9 +17,7 @@ svg {
 h2 {
   font-family: mamertoFont;
   height: 200px;
-
   font-size: 150px;
-    /* font-size: 2.5vw; */
 }
 
 div {
@@ -50,39 +46,7 @@ button {
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
-
-
-
-
-body{
-  background-color: #FFFFFF;
-}
-header{
-  overflow: hidden;
-}
-.card{
-  border: none;
-  word-wrap: normal;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-.card-header{
-  background-color: rgba(0,0,0,.3);
-}
-.card-footer{
-  background-color: rgba(0,0,0,.1);
-}
-.main-title{
-  font-size: 30px;
-}
-@media ( min-width: 576px ){
-  .main-title{ font-size: 40px; }
-}
-@media ( min-width: 768px ){
-  .main-title{ font-size: 50px; }
-}
-@media ( min-width: 992px ){
-  .main-title{ font-size: 60px; }
-}
-@media ( min-width: 1200px ){
-  .main-title{ font-size: 64px; }
+.input_name {
+  /* filter:alpha(opacity=5000); 
+  opacity:0.001; */
 }
