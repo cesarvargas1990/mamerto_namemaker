@@ -3,7 +3,7 @@ function downloadimage() {
     html2canvas(container, { allowTaint: true }).then(function (canvas) {
         var link = document.createElement("a");
         document.body.appendChild(link);
-        link.download = "mamerto" + mamerto_name.value + ".jpg";
+        link.download = "mamerto" + mamerto_name.value ;
         link.href = canvas.toDataURL();
         link.target = '_blank';
         link.click();
