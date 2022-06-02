@@ -47,6 +47,6 @@ button {
 }
 
 .input_name {
-  /* filter:alpha(opacity=5000); 
-  opacity:0.001; */
+  filter:alpha(opacity=5000); 
+  opacity:0.001;
 }
