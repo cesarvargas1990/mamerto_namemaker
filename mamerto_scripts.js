@@ -17,6 +17,7 @@ function queryParams() {
     let value = params.nombre;
     let text = generateColors(value.toUpperCase());
     document.getElementById("text_generator").innerHTML = text;
+    fitty('h2');
 }
 
 function toUpperCase(element) {
@@ -24,6 +25,7 @@ function toUpperCase(element) {
     element.value = newtext;
     let text = generateColors(newtext);
     document.getElementById("text_generator").innerHTML = text;
+    fitty('h2');
 }
 
 function selectText() {
