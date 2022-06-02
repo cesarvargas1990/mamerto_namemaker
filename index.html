@@ -1,19 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>[Genera tu Nombre Mamerto!!!]</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="mamerto_scripts.js" type="text/javascript"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js" type="text/javascript"></script>
-    
+
     <link rel="stylesheet" href="mamerto_styles.css">
 </head>
 
 <body onclick="selectText()" onload="selectText();queryParams()" style="text-align:center">
-    <div class="input_name" >
+    <div class="input_name">
 
         <textarea id="mamerto_name" onkeyup="toUpperCase(this);" name="mamerto_name" value="PETRO" rows="4" cols="50">
            PETRO
@@ -22,8 +28,8 @@
         <!-- <input placeholder="Ingresa tu nombre" onkeyup="toUpperCase(this);" maxlength="30" type="text" autofocus value="PETRO"
             id="mamerto_name" name="mamerto_name"> -->
     </div>
-    <div id="htmltoimage" >
-        <h2  onclick="selectText()" id="text_generator">
+    <div id="htmltoimage">
+        <h2 onclick="selectText()" id="text_generator">
             <font onclick="selectText()" color="#F59B20">P</font>
             <font onclick="selectText()" color="#003399">E</font>
             <font onclick="selectText()" color="#E21118">T</font>
@@ -32,8 +38,8 @@
             <font onclick="selectText()" color="#9900CC">@</font>
         </h2>
         <div class="hijo2" onclick="selectText()">
-            <svg style="text-align:center" onclick="selectText()" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="268px"
-                height="133px" version="1.1"
+            <svg style="text-align:center" onclick="selectText()" xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve" width="268px" height="133px" version="1.1"
                 style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                 viewBox="0 0 327.67 163.24" xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
@@ -108,4 +114,5 @@
     </div>
     <button onclick="downloadimage()">Clik para Descargar!!!</button>
 </body>
+
 </html>
