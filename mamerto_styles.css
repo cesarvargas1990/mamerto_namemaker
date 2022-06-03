@@ -11,14 +11,14 @@ svg {
 @font-face {
   font-family: mamertoFont;
   font-size: 120;
-  src: url(font.otf);
+  src: url(GothamBold.ttf);
 }
 
 h2 {
   font-family: mamertoFont;
   height: 200px;
   font-size: 90px;
-  /* letter-spacing: -15px; */
+   letter-spacing: -30px; 
 }
 
 div {
