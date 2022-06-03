@@ -15,6 +15,9 @@ function queryParams() {
         get: (searchParams, prop) => searchParams.get(prop),
     });
     let value = params.nombre;
+    if (value == "") {
+        value = "PETRO";
+    }
     let text = generateColors(value.toUpperCase());
     document.getElementById("text_generator").innerHTML = text;
     fitty('h2');
@@ -32,6 +35,7 @@ function selectText() {
     var input = document.getElementById('mamerto_name');
     input.focus();
     input.select();
+    fitty('h2');
 }
 
 function generateColors(newtext) {
@@ -50,6 +54,7 @@ function generateColors(newtext) {
     var cont = -1;
     cantidadLetras = newtext.length;
     var flag = 0;
+    var flage = 0;
     for (var x = 0; x < cantidadLetras; x++) {
         cont++;
         if (cont > 4 ) {
@@ -60,14 +65,21 @@ function generateColors(newtext) {
             newtext[x] = "</br>";
             flag = 1;
         }
-        if (flag == 1) {
+        if (newtext[x].charCodeAt(0) == 32) {
+            console.log("aq")
+            newtext[x] = "&nbsp;";
+            flage = 1;
+        }
+        if (flag == 1 || flage == 1) {
             text += "</br>";
         } else {
             text += "<font color=" + colors[cont] + ">" + newtext[x] + "</font>";
         }
+       
         flag = 0;
+        flage = 0;
         
     }
-    text += "<font color=" + colors[4] + ">@</font>";
+   
     return text;
 }

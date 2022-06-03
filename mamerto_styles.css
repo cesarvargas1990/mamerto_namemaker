@@ -10,14 +10,15 @@ svg {
 
 @font-face {
   font-family: mamertoFont;
-  font-size: 100px;
-  src: url(pacto_font.ttf);
+  font-size: 120;
+  src: url(font.otf);
 }
 
 h2 {
   font-family: mamertoFont;
   height: 200px;
-  font-size: 150px;
+  font-size: 90px;
+  /* letter-spacing: -15px; */
 }
 
 div {
@@ -49,4 +50,15 @@ button {
 .input_name {
   filter:alpha(opacity=5000); 
   opacity:0.001;
+}
+
+
+
+@media (min-width:801px) {
+ body {
+   width: 60%;
+ }
+ #htmltoimage {
+   text-align: center;
+ }
 }
