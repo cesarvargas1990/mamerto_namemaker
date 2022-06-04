@@ -10,8 +10,7 @@ svg {
 
 @font-face {
   font-family: mamertoFont;
-  font-size: 120;
-  src: url(font.otf);
+  src: url(test.otf);
 }
 
 h2 {
@@ -61,4 +60,12 @@ button {
  #htmltoimage {
    text-align: center;
  }
+}
+
+
+#letraa {
+  letter-spacing: -100px;
+}
+#letrab {
+  letter-spacing: -100px;
 }

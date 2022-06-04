@@ -81,5 +81,6 @@ function generateColors(newtext) {
         
     }
    
+    text += "<font color=" + colors[4] + ">@</font>";
     return text;
 }
